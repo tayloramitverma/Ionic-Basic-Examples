@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="signOut()">
+        <ion-icon name="log-out"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Tab 1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  My first tab content
+
+  <ion-button expand="block" routerLink="/menu/first/tabs/tab1/details" routerDirection="forward">
+    Details forward
+  </ion-button>
+
+  <ion-row>
+    <ion-col size="6">
+      <ion-button expand="block" (click)="enableDark()">Dark</ion-button>
+    </ion-col>
+    <ion-col size="6">
+      <ion-button expand="block" (click)="enableLight()">Light</ion-button>
+    </ion-col>
+  </ion-row>
+
+  
+
+</ion-content>

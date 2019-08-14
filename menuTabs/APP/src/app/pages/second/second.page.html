@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="signOut()">
+        <ion-icon name="log-out"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Users Listing</ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content padding>
+  
+  <ion-list>
+      <ion-item *ngFor="let user of usersdata">
+       <ion-button expand="block" routerLink="/menu/second/details/{{user._id}}" routerDirection="forward"> <ion-label>{{user.Name}}</ion-label></ion-button>
+      </ion-item>
+  </ion-list>
+
+</ion-content>

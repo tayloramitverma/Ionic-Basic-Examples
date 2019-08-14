@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Personal Notes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item padding>
+    <ion-img src="../../assets/akveo-logo.png"></ion-img>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Email</ion-label>
+    <ion-input type="email" placeholder="Email" [(ngModel)]="email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Password</ion-label>
+    <ion-input type="password" placeholder="Password" [(ngModel)]="password"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" (click)="onLoginClick()">Login</ion-button>
+
+</ion-content>
